@@ -16,6 +16,7 @@ router.get('/fetchallnotes',fetchuser,async(req,res) => {
     }
 })
 
+
 //route 2 adding the notes in db login required
 router.post('/addnote',fetchuser,[
     check('title','enter a valid title').isLength({min:1})

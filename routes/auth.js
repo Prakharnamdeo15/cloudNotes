@@ -19,7 +19,7 @@ router.post('/createuser',[
     let success = false;
     const result = validationResult(req);
     try{
-
+    console.log("ye chala bhai");
     if(!result.isEmpty()){
         return res.status(400).json({result:result.array()})
     }
